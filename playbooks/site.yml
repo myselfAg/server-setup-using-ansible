@@ -6,7 +6,6 @@
   roles:
     - common
     - firewall
-    - ssh
 
 - name: Configure Staging and Development Servers
   hosts: staging:development

@@ -1,4 +1,8 @@
 ---
+- name: Update package cache
+  ansible.builtin.apt:
+    update_cache: yes
+    
 - name: Install NGINX
   ansible.builtin.apt: 
     name: nginx
