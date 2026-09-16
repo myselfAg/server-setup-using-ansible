@@ -2,7 +2,7 @@
 ssh-keygen -y -f ansible-kp.pem > roles/ssh/files/ansible.pub -> During CI/CD
 
 # Manual key gen process
-ssh-keygen -y -f ansible-kp.pem > ansible.pub
+ssh-keygen -y -f ansible-kp.pem > /server-setup-using-ansible/roles/ssh/files/ansible.pub
 
 
 
