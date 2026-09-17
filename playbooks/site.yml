@@ -12,8 +12,8 @@
   become: yes
 
   vars:
-    page_title: Nginx Server
-    greeting: Hello From Nginx
+    page_title: Apache Server
+    greeting: Hello From Apache
     message: Deployed using Ansible and Jinja2
 
   roles:
@@ -22,6 +22,11 @@
 - name: Configure Production Server
   hosts: production
   become: yes
+
+  vars:
+    page_title: Nginx Server
+    greeting: Hello From Nginx
+    message: Deployed using Ansible and Jinja2
 
   roles:
     - nginx
