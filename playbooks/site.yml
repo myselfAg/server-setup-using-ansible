@@ -11,6 +11,11 @@
   hosts: staging:development
   become: yes
 
+  vars:
+    page_title: Nginx Server
+    greeting: Hello From Nginx
+    message: Deployed using Ansible and Jinja2
+
   roles:
     - apache
 
